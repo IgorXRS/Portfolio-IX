@@ -2,7 +2,15 @@
 function menuSuspenso() {
     var element = document.getElementById("menuLinks");
     element.classList.toggle("show");
+    var element = document.getElementById("header");
+    element.classList.toggle("show2");
 }
+
+function zomProjeto() {
+    var element = document.getElementById("box");
+    element.classList.toggle("activep");
+}
+
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header ul li a')
