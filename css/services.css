@@ -1,0 +1,122 @@
+#services {
+    height: 100%;
+    overflow: clip;
+}
+
+.background2 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: linear-gradient(rgba(14, 0, 53, 0.2), rgba(14, 0, 53, 0.2)),
+                    url(../img/background1.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    min-width: 300px;
+}
+
+.background2 .serv-container {
+    right: 0;
+    width: 100vh;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+    pointer-events: none;
+    position: relative;
+}
+
+.background2 .serv-container .serv-box {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background2 .serv-box .serv{
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    transform: rotate(calc(360deg / 4 * var(--i)));
+    transform-origin: 50vh;
+    background: #00000c;
+    border-radius: 10%;
+    padding: 1rem 10px;
+}
+
+.background2 .serv i {
+    font-size: 1.5rem;
+}
+
+.background2 .serv h3 {
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.background2 .serv-box .circle {
+    width: 25rem;
+    height: 25rem;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.background2 .serv-box .serv:nth-child(1) i {
+    margin-right: 15px;
+}
+
+.background2 .serv-box .serv:nth-child(2),
+.background2 .serv-box .serv:nth-child(4) {
+    padding-bottom: 20px;
+}
+
+.background2 .serv-container .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 50vh solid #000014;
+    border-right: 50vh solid #000014;
+    border-bottom: 50vh solid #000014;
+    border-left: 50vh solid transparent;
+}
+
+.servi-img2 img{
+    position: absolute;
+    left: 0;
+    right: 10vh;
+    width: 40vh;
+}
+
+#dev01 {
+    position: relative;
+    left: -40vh;
+    right: 30vh;
+    bottom: 15vh;
+    width: 40vh;
+}
+#dev02 {
+    position: relative;
+    left: -20vh;
+    right: 30vh;
+    bottom: 25vh;
+    width: 40vh;
+}
+
+#dev03 {
+    position: relative;
+    left: -5vh;
+    right: 20vh;
+    bottom: 60vh;
+    width: 40vh;
+}
+
