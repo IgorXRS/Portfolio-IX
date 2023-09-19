@@ -66,11 +66,12 @@ html, body {
 
   #projetos .box.activep{
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     height: 70vh;
     width: 60vw;
     transition: 0.7s;
+    display: block;
+    transform: translateY(-15vh);
+    z-index: 2;
   }
 
   #projetos  .box:hover{
@@ -92,21 +93,42 @@ html, body {
   }
 
 
+  .backg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .blur.activep{
+    background: rgba(14, 0, 53, 0.411);
+    backdrop-filter: blur(8px);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .titulo-proj{
+    height: 15%;
+  }
+
+  .main-proj{
+    height: 55%;
+  }
+
+
   #projetos .tecno{
     width: 100%;
+    height: 30%;
     background: rgba(14, 0, 53, 0.2);
     backdrop-filter: blur(2px);
     position: relative;
-    top: 125px;
+    bottom: 0;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    opacity: 0;
+    opacity: 1;
     transition: 0.8s;
   }
 
-  #projetos .tecno:hover{
-    opacity: 1;
-  }
 
 
   #projetos .tecno p{
@@ -159,7 +181,7 @@ html, body {
     height: 10px;
     border-radius: 50%;
     position: relative;
-    left: 30px;
+    left: 20px;
     top: 8px;
   }
 
@@ -170,18 +192,18 @@ html, body {
 
   #projetos .porcet .bola2{
     background: rgb(255, 60, 0);
-    left: 30px;
+    left: 20px;
   }
 
   #projetos .porcet .bola3{
     background: rgb(231, 216, 0);
-    left: 30px;
+    left: 20px;
   }
 
   #projetos .porcet p{
     font-weight: 100;
     position: relative;
-    left: 20px;
+    left: 10px;
     font-size: 11px;
     padding-right: 15px;
     padding-top: 6px;
@@ -189,7 +211,8 @@ html, body {
   }
 
   #projetos .porcet span{
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 12px;
   }
 
 
@@ -198,7 +221,37 @@ html, body {
     background: red;
   }
 
+  .tecno .botoes {
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    text-overflow: ellipsis;
+    display: none;
+    transition: 0.3s;
+    overflow: hidden;
+  }
 
+  .botoes.activep {
+    display: flex;
+  }
+
+  .tecno .botoes ul li{
+    font-weight: 600;
+    padding: 10px;
+    padding-top: 5px;
+    transition: 0.4s;
+  }
+
+  .tecno .botoes ul li:hover{
+    font-size: 24px;
+  }
+
+  .tecno .botoes > p{
+    width: 70%;
+    padding: 8px;
+    padding-left: 20px;
+  }
 
 
 @media only screen and (max-width: 550px) {

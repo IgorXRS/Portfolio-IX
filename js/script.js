@@ -7,10 +7,27 @@ function menuSuspenso() {
 }
 
 function zomProjeto() {
-    var element = document.getElementById("box");
-    element.classList.toggle("activep");
+    var container2 = document.getElementById("blur")
+    container2.classList.toggle("activep");
+
+    var container2 = document.getElementById("botoes")
+    container2.classList.toggle("activep");
 }
 
+function removerClasseActivep() {
+    const elementosComActivep = document.querySelectorAll('.activep');
+    
+    elementosComActivep.forEach(elemento => {
+      elemento.classList.remove('activep');
+    });
+  }
+
+const projetos = document.querySelectorAll('.box');
+projetos.forEach(projeto => {
+  projeto.addEventListener('click', () => {
+  projeto.classList.toggle('activep');
+});
+});
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header ul li a')

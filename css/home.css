@@ -107,8 +107,8 @@ header{
 
 
 .background{
-    background: linear-gradient(rgba(14, 0, 53, 0.2), rgba(14, 0, 53, 0.2)),
-                url(../img/background2.png);
+    background: linear-gradient(rgba(14, 0, 53, 0.2), rgba(14, 0, 53, 0.6)),
+                    url(../img/background1.png);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -227,15 +227,21 @@ header{
     font-size: 1.8em;
     cursor: pointer;
 }
-/*
+
 .imagen-box > img{
     display: flex;
     position: absolute;
-    top: -25px;
-    right: 0;
-    width: 850px;
+    top: 0;
+    right: 10vw;
+    width: 50vw;
+    opacity: 0.8;
+    transition: 0.3s;
 }
-*/
+
+.imagen-box > img:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
 
 /*Configuração de Responsividade*/
 
@@ -264,7 +270,7 @@ header{
 
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 870px) {
     .menu-links {
         display: none;
         overflow: hidden;
@@ -299,8 +305,7 @@ header{
     .menu-links a:hover {
         padding-top: 5px;
     }
-
-
+    
     header{
         display: flex;
         max-width: 100%;
@@ -320,6 +325,16 @@ header{
     .menu-btn {
         display: block;
     }
+
+    .container-text{
+        padding: 270px  0px 0px 25%;
+    }
+
+    .imagen-box > img{
+        top: 0;
+        left: 35%;
+        width: 360px;
+    }
 }
 
 @media only screen and (min-width: 380px) {
@@ -328,7 +343,7 @@ header{
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
     .background, .background2{
         background: linear-gradient(rgba(14, 0, 53, 0.2), rgba(14, 0, 53, 0.2)),
                 url(../img/background.png);
@@ -337,6 +352,10 @@ header{
     .container-text{
         padding: 35%  0px 0px 10%;
         max-width: 53%;
+    }
+
+    .imagen-box > img{
+        opacity: 0;
     }
 
     .redes-sociais{
@@ -349,7 +368,7 @@ header{
 }
 
 
-@media only screen and (min-width: 959px) {
+@media only screen and (min-width: 1160px) {
     html{
         font-size: 20px;
     }

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Igor Xavier">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/services.css">
@@ -31,7 +32,6 @@
             <div class="topo">
                 <a href="#inicio"><i class="fa-regular fa-circle-up"></i></a>
             </div>
-        
         </header>
     </nav>
 
@@ -44,8 +44,6 @@
                         <h1>eu sou <span data-text="Igor Xavier">Igor Xavier</span></h1>
                         <p> Desenvolvedor front-end apaixonado por 
                         </br>transformar ideias em realidade digital. </p>
-                        <!--<br>Brasil. I create custom websites to help
-                        <br>businesses do better online. </p>-->
                     </div><!--text-->
                     <div class="redes-sociais">
                         <a style=" --clr: #ff5100;" class="rs" href="https://github.com/IgorXRS" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -56,9 +54,9 @@
                     </div><!--redes-sociais-->                    
                 </div><!--container-text-->
             </div><!--background-->
-           <!-- <div class="imagen-box">
-                <img src="./img/foto2.png" alt="Igor Xavier" />
-            </div>-->
+            <div class="imagen-box">
+                <img src="img/foto2.png" alt="Igor Xavier" />
+            </div>
         </section><!--Home-->
         <section id="sobre">
             <div class="container-sobre">
@@ -167,37 +165,72 @@
         <section id="projetos">
             <div class="background2">
                 <div class="full-page">
-            
+                    <div onclick="removerClasseActivep()" id="blur" class="blur"></div>
                     <div class="h-header3">
                         <div class="text">
                             <h1 style="font-size: 1.6rem;">Meus <span data-text="PROJETOS" style="font-size: 2.5rem;">PROJETOS</span></h1>
                         </div>
                         <p>Meu projetos é um reflexo das minhas realizações e experiências profissionais. Cada projeto destaca minha capacidade de entregar resultados de qualidade, inovação e eficiência.</p>
                     </div>
-
                     <div id="container_projetos" class="container_projetos">
                         <div id="box" onclick="zomProjeto()" class="box" style="background-image: url(img/calculadora.PNG);" >
-                            <div class="titulo-proj">
-                                <p>CALCULADORA</p>
-                            </div>
-                            <div class="descricao-proj"></div>
-                            <div class="tecno">
-                                <p>Tecnologias</p>
-                                <div class="barra">
-                                    <div class="css" style="width: 40.8%;">
+                            <div class="backg">
+                                <div class="titulo-proj">
+                                    <p>CALCULADORA</p>
+                                </div>
+                                <div class="main-proj"></div>
+                                <div class="tecno">
+                                    <p>Tecnologias</p>
+                                    <div class="barra">
+                                        <div class="css" style="width: 40.8%;">
+                                        </div>
+                                        <div class="html" style="width: 30.1%;">
+                                        </div>
+                                        <div class="javaScript" style="width: 29.1%;">
+                                        </div>
                                     </div>
-                                    <div class="html" style="width: 30.1%;">
+                                    <div class="porcet">
+                                        <div class="bola"></div><p><span>CSS</span> 40.8%</p><div class="bola2"></div><p><span>HTML</span> 30.1%</p><div class="bola3"></div><p><span>JavaScript</span> 29.1%</p>
                                     </div>
-                                    <div class="javaScript" style="width: 29.1%;">
+                                    <div id="botoes" class="botoes">
+                                        <ul>
+                                            <li><a href="https://igorxrs.github.io/Calculadora-Web-APP/" target="_blank"><span><i class="fa-solid fa-pager"></i></span> Acessar pagina</a></li>
+                                            <li><a href="https://github.com/IgorXRS/Calculadora-Web-APP" target="_blank"><span><i class="fa-brands fa-github"></i></span> Repositório</a></li>
+                                        </ul>
+                                        <p>Projeto realizado durante o Curso de Desenvolvedor Front-End, na instituição Danki Code. Utilizando as tecnologias HTML, CSS, treinando objetivamente o conhecimento adquirido no curso.</p>
                                     </div>
                                 </div>
-                                <div class="porcet">
-                                    <div class="bola"></div><p><span>CSS</span> 40.8%</p><div class="bola2"></div><p><span>HTML</span> 30.1%</p><div class="bola3"></div><p><span>JavaScript</span> 29.1%</p>
-                                </div>
-
                             </div>
                         </div>
-                        <div class="box">2</div>
+                        <div id="box" onclick="zomProjeto()" class="box" style="background-image: url(img/Landing-page.PNG);" >
+                            <div class="backg">
+                                <div class="titulo-proj">
+                                    <p>AGENCIA BOLD</p>
+                                </div>
+                                <div class="main-proj"></div>
+                                <div class="tecno">
+                                    <p>Tecnologias</p>
+                                    <div class="barra">
+                                        <div class="css" style="width: 61.3%;">
+                                        </div>
+                                        <div class="html" style="width: 0%;">
+                                        </div>
+                                        <div class="javaScript" style="width: 38.7%; background: rgb(255, 60, 0);">
+                                        </div>
+                                    </div>
+                                    <div class="porcet">
+                                        <div class="bola"></div><p><span>CSS</span> 61.3%</p><div class="bola2"></div><p><span>HTML</span> 38.7%</p>
+                                    </div>
+                                    <div id="botoes" class="botoes">
+                                        <ul>
+                                            <li><a href="https://igorxrs.github.io/Agencia-bold-Curso-Danki/" target="_blank"><span><i class="fa-solid fa-pager"></i></span> Acessar pagina</a></li>
+                                            <li><a href="https://github.com/IgorXRS/Agencia-bold-Curso-Danki" target="_blank"><span><i class="fa-brands fa-github"></i></span> Repositório</a></li>
+                                        </ul>
+                                        <p>Projeto realizado durante o Curso de Desenvolvedor Front-End, na instituição Danki Code. Utilizando as tecnologias HTML, CSS, treinando objetivamente o conhecimento adquirido no curso.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="box">3</div>
                         <div class="box">4</div>
                         <div class="box">5</div>
