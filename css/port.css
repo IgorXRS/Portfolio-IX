@@ -1,264 +1,316 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*font-family: 'MADE Soulmaze Outline', sans-serif;*/
+/* Reset padrão para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
-
+/* Estilo do corpo da página */
 body {
-    background: black;
+  background: black;
 }
 
+/* Estilo da classe .full-page */
 .full-page {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
-
+/* Estilo da classe .h-header3 */
 .h-header3 {
-    position: relative;
-    top: 10vh;
-    align-items: center;
-    padding-left: 6vw;
+  position: relative;
+  top: 10vh;
+  align-items: center;
+  padding-left: 6vw;
 }
 
+/* Estilo do título h1 dentro de .h-header3 .text */
 .h-header3 .text h1 {
-    padding-left: 0px;
+  padding-left: 0px;
 }
 
-.h-header3 p{
-    padding-top: 15px;
-    color: white;
-    text-align: justify;
-    width: 60%;
-    font-weight: lighter;
-    font-family: Arial, Helvetica, sans-serif;
+/* Estilo do parágrafo dentro de .h-header3 */
+.h-header3 p {
+  padding-top: 15px;
+  color: white;
+  text-align: justify;
+  width: 60%;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  #projetos .container_projetos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px 10px;
-    width: 90%;
-    margin: 45px auto;
-  }
-  #projetos  .box {
-    background: white;
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    margin: 20px 10px;
-    height: 200px;
-    width: 350px;
+/* Estilo da classe .container_projetos dentro de #projetos */
+#projetos .container_projetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 7vh 10px;
+  width: 90%;
+  margin: 45px auto;
+}
 
-  }
+/* Estilo da classe .box dentro de #projetos */
+#projetos .box {
+  background: white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  margin: 20px 10px;
+  height: 200px;
+  width: 350px;
+  z-index: 0;
+}
 
-  #projetos .box.activep{
-    position: absolute;
-    height: 70vh;
-    width: 60vw;
-    transition: 0.7s;
-    display: block;
-    transform: translateY(-15vh);
-    z-index: 2;
-  }
+/* Estilo da classe .activep dentro de #projetos .box */
+#projetos .box.activep {
+  position: absolute;
+  height: 70vh;
+  width: 60vw;
+  transition: 0.7s;
+  display: block;
+  transform: translateY(-15vh);
+  z-index: 2;
+}
 
-  #projetos  .box:hover{
-    border: 2px solid blue;
-  }
+/* Estilo de hover da classe .box dentro de #projetos */
+#projetos .box:hover {
+  border: 1px solid blue;
+}
 
-  
+/* Estilo do título dentro de .titulo-proj */
+.titulo-proj p {
+  background: rgba(14, 0, 53, 0.2);
+  backdrop-filter: blur(5px);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  color: rgb(1, 1, 51);
+}
 
-    .titulo-proj p{
-    background: rgba(14, 0, 53, 0.2);
-    backdrop-filter: blur(5px);
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 8px;
-    padding-bottom: 5px;
-    color: rgb(1, 1, 51);
-  }
+/* Estilo da classe .backg */
+.backg {
+  width: 100%;
+  height: 100%;
+}
 
+/* Estilo da classe .blur.activep */
+.blur.activep {
+  background: rgba(14, 0, 53, 0.411);
+  backdrop-filter: blur(8px);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
 
-  .backg {
-    width: 100%;
-    height: 100%;
-  }
+/* Estilo da classe .titulo-proj */
+.titulo-proj {
+  height: 15%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 
-  .blur.activep{
-    background: rgba(14, 0, 53, 0.411);
-    backdrop-filter: blur(8px);
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 2;
-  }
+}
 
-  .titulo-proj{
-    height: 15%;
-  }
+/* Estilo da classe .main-proj */
+.main-proj {
+  height: 55%;
+}
 
-  .main-proj{
-    height: 55%;
-  }
+/* Estilo da classe .tecno dentro de #projetos */
+#projetos .tecno {
+  width: 100%;
+  height: 30%;
+  background: rgba(14, 0, 53, 0.2);
+  backdrop-filter: blur(2px);
+  position: relative;
+  bottom: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 1;
+  transition: 0.8s;
+}
 
+/* Estilo dos parágrafos dentro de #projetos .tecno */
+#projetos .tecno p {
+  font-size: 15px;
+  padding-left: 15px;
+  padding-bottom: 3px;
+  font-weight: 600;
+  padding-top: 5px;
+}
 
-  #projetos .tecno{
-    width: 100%;
-    height: 30%;
-    background: rgba(14, 0, 53, 0.2);
-    backdrop-filter: blur(2px);
-    position: relative;
-    bottom: 0;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    opacity: 1;
-    transition: 0.8s;
-  }
+/* Estilo da barra de progresso dentro de #projetos .barra */
+#projetos .barra {
+  width: 100%;
+  height: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+}
 
+/* Estilo da barra de CSS dentro de #projetos .barra */
+#projetos .barra .css {
+  background: rgb(89, 0, 124);
+  height: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-right: 3px;
+}
 
+/* Estilo da barra de HTML dentro de #projetos .barra */
+#projetos .barra .html {
+  background: rgb(255, 60, 0);
+  height: 10px;
+}
 
-  #projetos .tecno p{
-    font-size: 15px;
-    padding-left: 15px;
-    padding-bottom: 3px;
-    font-weight: 600;
-    padding-top: 5px;
-  }
+/* Estilo da barra de JavaScript dentro de #projetos .barra */
+#projetos .barra .javaScript {
+  background: rgb(231, 216, 0);
+  height: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: 3px;
+}
 
-  #projetos .barra{
-    width: 100%;
-    height: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 0;
+/* Estilo da classe .porcet dentro de #projetos */
+#projetos .porcet {
+  display: flex;
+}
 
-  }
+/* Estilo das bolas dentro de #projetos .porcet */
+#projetos .porcet .bola,
+#projetos .porcet .bola2,
+#projetos .porcet .bola3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  left: 20px;
+  top: 8px;
+}
 
-  #projetos .barra .css{
-    background: rgb(89, 0, 124);
-    height: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    margin-right: 3px;
-  }
-  
-  #projetos .barra .html{
-    background: rgb(255, 60, 0);
-    height: 10px;
-  }
+/* Estilo da primeira bola dentro de #projetos .porcet */
+#projetos .porcet .bola {
+  background: rgb(89, 0, 124);
+}
 
-  #projetos .barra .javaScript{
-    background: rgb(231, 216, 0);
-    height: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    margin-left: 3px;
-  }
+/* Estilo da segunda bola dentro de #projetos .porcet */
+#projetos .porcet .bola2 {
+  background: rgb(255, 60, 0);
+  left: 20px;
+}
 
-  #projetos .porcet {
-    display: flex;
-  }
+/* Estilo da terceira bola dentro de #projetos .porcet */
+#projetos .porcet .bola3 {
+  background: rgb(231, 216, 0);
+  left: 20px;
+}
 
-  #projetos .porcet .bola,  #projetos .porcet .bola2,  #projetos .porcet .bola3{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    position: relative;
-    left: 20px;
-    top: 8px;
-  }
+/* Estilo dos parágrafos dentro de #projetos .porcet */
+#projetos .porcet p {
+  font-weight: 100;
+  position: relative;
+  left: 10px;
+  font-size: 11px;
+  padding-right: 15px;
+  padding-top: 6px;
+}
 
-  #projetos .porcet .bola{
-    background: rgb(89, 0, 124);
-  }
-  
+/* Estilo do texto em negrito dentro de #projetos .porcet */
+#projetos .porcet span {
+  font-weight: 700;
+  font-size: 12px;
+}
 
-  #projetos .porcet .bola2{
-    background: rgb(255, 60, 0);
-    left: 20px;
-  }
+/* Estilo da classe .discricao-projetos dentro de .tecno */
+.tecno .discricao-projetos {
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  text-overflow: ellipsis;
+  display: none;
+  transition: 0.3s;
+  overflow: hidden;
+}
 
-  #projetos .porcet .bola3{
-    background: rgb(231, 216, 0);
-    left: 20px;
-  }
+/* Estilo da classe .activep dentro de .discricao-projetos */
+.discricao-projetos.activep {
+  display: flex;
+}
 
-  #projetos .porcet p{
-    font-weight: 100;
-    position: relative;
-    left: 10px;
-    font-size: 11px;
-    padding-right: 15px;
-    padding-top: 6px;
+/* Estilo dos itens da lista dentro de .tecno .discricao-projetos ul li */
+.tecno .discricao-projetos ul li {
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: 0.4s;
+  padding-left: 30px;
+}
 
-  }
+/* Estilo de hover para os itens da lista dentro de .tecno .discricao-projetos ul li */
+.tecno .discricao-projetos ul li:hover {
+  font-size: 1.2em;
+}
 
-  #projetos .porcet span{
-    font-weight: 700;
-    font-size: 12px;
-  }
+/* Estilo da lista dentro de .tecno .discricao-projetos ul */
+.tecno .discricao-projetos ul {
+  width: 30%;
+}
 
+/* Estilo do texto dentro de .tecno .discricao-projetos .text-desc */
+.tecno .discricao-projetos .text-desc {
+  width: 70%;
+  padding: 14px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
 
-
-  .container.activep {
-    background: red;
-  }
-
-  .tecno .botoes {
-    width: 100%;
-    height: 60%;
-    justify-content: center;
-    align-items: center;
-    text-overflow: ellipsis;
-    display: none;
-    transition: 0.3s;
-    overflow: hidden;
-  }
-
-  .botoes.activep {
-    display: flex;
-  }
-
-  .tecno .botoes ul li{
-    font-weight: 600;
-    padding: 10px;
-    padding-top: 5px;
-    transition: 0.4s;
-  }
-
-  .tecno .botoes ul li:hover{
-    font-size: 24px;
-  }
-
-  .tecno .botoes > p{
-    width: 70%;
-    padding: 8px;
-    padding-left: 20px;
-  }
-
-
+/* Estilos responsivos para telas menores */
 @media only screen and (max-width: 550px) {
+  .h-header3 p {
+      padding-top: 40px;
+      width: 90%;
+  }
 
-    .h-header3 p{
-        padding-top: 40px;
-        width: 90%;
-    }
-   
+  .discricao-projetos.activep {
+    display: block;
+  }
+
+  .tecno .discricao-projetos ul {
+    width: 100%;
+  }
+
+  .main-proj {
+    height: 40%;
+  }
+
+  #projetos .tecno {
+    height: 45%;
+  }
+
+  .tecno .discricao-projetos .text-desc {
+    width: 100%;
+    padding-top: 0;
+    overflow-y: scroll;
+    z-index: 4;
+  }
+
+
+}
+
+/* Estilos para telas maiores */
+@media only screen and (min-width: 1700px) {
+  #projetos .box {
+      height: 300px;
+      width: 500px;
+  }
 }
