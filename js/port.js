@@ -1,6 +1,7 @@
 
   //------------------Igor Xaiver-------------------------
 
+
 // Esta função é chamada quando uma div .box é clicada.
 function zomProjeto(element) {
     // Toggle (adiciona ou remove) a classe "activep" na div que foi clicada.
@@ -32,8 +33,3 @@ function zomProjeto(element) {
     // Quando uma div .box é clicada, a função zomProjeto será chamada.
     projeto.addEventListener("click", zomProjeto);
   });
-  
-  myScroll = new IScroll('#myWrapper', { 
-    tap: true, 
-    click: true,    
- });

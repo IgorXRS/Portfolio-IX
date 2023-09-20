@@ -5,9 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Importação de fontes */
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-
 /* Estilo do corpo da página */
 body {
   background: black;
@@ -257,6 +254,11 @@ body {
   margin-bottom: 10px;
   transition: 0.4s;
   padding-left: 30px;
+  cursor: pointer;
+}
+
+.tecno .discricao-projetos ul li a{
+  color: rgb(2, 0, 109);
 }
 
 /* Estilo de hover para os itens da lista dentro de .tecno .discricao-projetos ul li */
