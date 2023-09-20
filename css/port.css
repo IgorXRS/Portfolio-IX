@@ -62,6 +62,7 @@ body {
   height: 200px;
   width: 350px;
   z-index: 0;
+  cursor: pointer;
 }
 
 /* Estilo da classe .activep dentro de #projetos .box */
@@ -73,6 +74,7 @@ body {
   display: block;
   transform: translateY(-15vh);
   z-index: 2;
+  cursor: pointer;
 }
 
 /* Estilo de hover da classe .box dentro de #projetos */
@@ -107,6 +109,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 1;
+  cursor: pointer;
 }
 
 /* Estilo da classe .titulo-proj */

@@ -33,3 +33,7 @@ function zomProjeto(element) {
     projeto.addEventListener("click", zomProjeto);
   });
   
+  myScroll = new IScroll('#myWrapper', { 
+    tap: true, 
+    click: true,    
+ });
