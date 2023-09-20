@@ -218,20 +218,6 @@ li.slick-active button{
     color: #fff;
     letter-spacing: 2px;
 }
-/*
-.h-header {
-    position: relative;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-left: 50px;
-}
-
-.h-header .text h1 {
-    font-size: 40px;
-    border-bottom: 3px solid #00e1ff;
-    color: #1100ff;
-}*/
 
 .h-header2 {
     display: flex;
@@ -244,7 +230,9 @@ li.slick-active button{
     padding-left: 0px;
 }
 .habilidade_text img{
-    width: 900px;
+    width: 40vw;
+    padding-top: 100px;
+    padding-left: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -256,6 +244,7 @@ li.slick-active button{
         width: 900px;
         position: relative;
         top: -23px;
+        
     }
 
     .container_prof{
