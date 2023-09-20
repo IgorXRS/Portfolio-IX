@@ -32,4 +32,4 @@ function zomProjeto(element) {
   projetos.forEach((projeto) => {
     // Quando uma div .box é clicada, a função zomProjeto será chamada.
     projeto.addEventListener("click", zomProjeto);
-  });
+  }); 
